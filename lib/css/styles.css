@@ -1,0 +1,68 @@
+.accent-color-text {
+  color: #47d8dd;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+body {
+  background-color: #47d8dd;
+  font-family: sans-serif;
+  color: #666;
+}
+
+main {
+  width: 210mm;
+  height: 297mm;
+  /* width: calc(210mm - 50px * 2);
+  height: calc(297mm - 10px * 2); */
+  background-color: white;
+  margin: 200px auto;
+}
+
+header {
+  padding: 40px;
+}
+
+header > .main-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+header > .main-info > .personal {
+  display: flex;
+}
+
+header > .main-info > .personal > .avatar {
+  background-image: url('https://static.dw.com/image/59697915_303.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+header > .main-info > .personal > h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+header > .main-info > .contacts {
+  border: 2px solid #ccc;
+  padding: 20px;
+}
+
+header > .summary {
+  margin-top: 40px;
+}
+
+header > .summary > h2 {
+  margin-bottom: 20px;
+}
+
+.content {
+  background-color: blueviolet;
+}
