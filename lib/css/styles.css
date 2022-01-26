@@ -29,6 +29,7 @@ header {
 header > .main-info {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 header > .main-info > .personal {
@@ -75,4 +76,32 @@ header > .summary > h2 {
 
 .content > .right-content {
   padding-left: 20px;
+}
+
+@media (max-width: 900px) {
+  main {
+    width: calc(100% - 20px * 2);
+    height: calc(100% - 20px * 2);
+    margin: 0;
+    padding: 20px;
+  }
+
+  header > .main-info > .contacts {
+    flex-grow: 1;
+    margin-top: 20px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+  .content > .left-content {
+    border-right: none;
+    border-bottom: 2px solid #ccc;
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+  .content > .right-content {
+    padding-left: 0px;
+    padding-top: 20px;
+  }
 }
